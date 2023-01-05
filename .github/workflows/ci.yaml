@@ -31,5 +31,12 @@ jobs:
     - uses: bahmutov/npm-install@v1
     - run: yarn format:check
     - run: yarn eslint:check
+    - uses: actions/cache@v3
+      with:
+        path: .build_cache
+        key: ${{ GITHUB_REF_NAME }}-webpack-build
+        # fallback to use "main" branch cache
+        restore-keys: |
+          main-webpack-build
     - run: yarn build:notests
     - run: yarn test:ci
