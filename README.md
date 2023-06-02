@@ -1,4 +1,4 @@
-# Cryostat-Web
+# cryostat-web
 
 ![Build Status](https://github.com/cryostatio/cryostat-web/actions/workflows/ci.yaml/badge.svg)
 [![Google Group : Cryostat Development](https://img.shields.io/badge/Google%20Group-Cryostat%20Development-blue.svg)](https://groups.google.com/g/cryostat-development)
