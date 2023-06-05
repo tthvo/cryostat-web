@@ -21,7 +21,7 @@ on:
 
 jobs:
   build-preview:
-    if: ${{ github.repository_owner == 'cryostatio' }}
+    # if: ${{ github.repository_owner == 'cryostatio' }}
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
