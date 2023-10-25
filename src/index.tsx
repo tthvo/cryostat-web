@@ -14,6 +14,8 @@
  * limitations under the License.
  */
 import { App } from '@app/index';
-import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
 
-ReactDOM.render(<App />, document.getElementById('root') as HTMLElement);
+
+const root = createRoot(document.getElementById('app') as HTMLElement);
+root.render(<App />);
