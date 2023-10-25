@@ -58,9 +58,7 @@ export const WarningResolverAsActionButton: React.FC<WarningResolverAsActionButt
   );
 };
 
-export interface WarningResolverAsCredModalProps {
-  children?: React.ReactNode;
-}
+export interface WarningResolverAsCredModalProps extends React.PropsWithChildren {}
 
 export const WarningResolverAsCredModal: React.FC<WarningResolverAsCredModalProps> = ({ children, ...props }) => {
   const [showAuthModal, setShowAuthModal] = React.useState(false);

@@ -21,6 +21,4 @@ export interface LoadingProps {
   isLoading: boolean;
 }
 
-export type DescriptionProps = {
-  children?: React.ReactNode;
-};
+export interface DescriptionProps extends React.PropsWithChildren {}

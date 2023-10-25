@@ -43,9 +43,7 @@ export const JoyrideContext = React.createContext<JoyrideContextType>({
   setIsNavBarOpen: () => undefined,
 });
 
-export interface JoyrideProviderProps {
-  children?: React.ReactNode;
-}
+export interface JoyrideProviderProps extends React.PropsWithChildren {}
 
 export const JoyrideProvider: React.FC<JoyrideProviderProps> = ({ children, ...props }) => {
   const [state, setState] = useSetState(defaultState);

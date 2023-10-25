@@ -23,9 +23,7 @@ import { useTheme } from '@app/utils/hooks/useTheme';
 import * as React from 'react';
 import ReactJoyride, { CallBackProps, ACTIONS, EVENTS, STATUS } from 'react-joyride';
 
-interface CryostatJoyrideProps {
-  children?: React.ReactNode;
-}
+interface CryostatJoyrideProps extends React.PropsWithChildren {}
 
 const CryostatJoyride: React.FC<CryostatJoyrideProps> = ({ children }) => {
   const {

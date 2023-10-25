@@ -29,7 +29,6 @@ export interface DashboardCardProps extends CardProps {
   cardHeader: React.ReactNode;
   isDraggable?: boolean;
   isResizable?: boolean;
-  children?: React.ReactNode;
 }
 
 export const DashboardCard: React.FC<DashboardCardProps> = ({

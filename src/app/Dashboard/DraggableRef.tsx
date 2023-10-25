@@ -138,8 +138,7 @@ const setDroppableItem = (di: DroppableItem, transition: Transition) => {
   di.node.classList.add(`${DRAGGABLE_REF_KLAZZ}-wrapper__${transition}`);
 };
 
-export interface DraggableRefProps {
-  children: React.ReactNode;
+export interface DraggableRefProps extends React.PropsWithChildren {
   dashboardId: number;
 }
 

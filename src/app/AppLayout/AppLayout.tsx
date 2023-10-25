@@ -84,9 +84,7 @@ import { useTranslation } from 'react-i18next';
 import { Link, matchPath, NavLink, useLocation, useNavigate } from 'react-router-dom';
 import { map } from 'rxjs/operators';
 
-export interface AppLayoutProps {
-  children?: React.ReactNode;
-}
+export interface AppLayoutProps extends React.PropsWithChildren {}
 
 export const AppLayout: React.FC<AppLayoutProps> = ({ children }) => {
   const serviceContext = React.useContext(ServiceContext);

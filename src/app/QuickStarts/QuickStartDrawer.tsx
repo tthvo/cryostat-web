@@ -35,9 +35,7 @@ const SELECTOR_ID = `[\\w-&]+`; // has extra &'
 
 // [linkLabel]{{action id}}
 const HIGHLIGHT_REGEXP = new RegExp(`\\[(${LINK_LABEL})\\]{{(${HIGHLIGHT_ACTIONS.join('|')}) (${SELECTOR_ID})}}`, 'g');
-export interface GlobalQuickStartDrawerProps {
-  children: React.ReactNode;
-}
+export interface GlobalQuickStartDrawerProps extends React.PropsWithChildren {}
 
 export const GlobalQuickStartDrawer: React.FC<GlobalQuickStartDrawerProps> = ({ children }) => {
   const { i18n } = useTranslation();

@@ -17,7 +17,7 @@ import { Text, TextContent, TextList, TextListItem, TextVariants } from '@patter
 import * as React from 'react';
 import { DescriptionProps } from './types';
 
-export const JmxAuthDescription: React.FC<React.PropsWithChildren<DescriptionProps>> = ({ children }) => {
+export const JmxAuthDescription: React.FC<DescriptionProps> = ({ children }) => {
   return (
     <TextContent>
       {children}

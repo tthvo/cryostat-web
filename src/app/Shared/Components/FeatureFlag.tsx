@@ -43,10 +43,9 @@ export const DynamicFeatureFlag: React.FC<DynamicFeatureFlagProps> = ({ levels, 
   return <>{toRender}</>;
 };
 
-export interface FeatureFlagProps {
+export interface FeatureFlagProps extends React.PropsWithChildren {
   strict?: boolean;
   level: FeatureLevel;
-  children?: React.ReactNode | undefined;
 }
 
 export const FeatureFlag: React.FC<FeatureFlagProps> = ({ level, strict, children }) => {

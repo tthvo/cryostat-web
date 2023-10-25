@@ -22,13 +22,12 @@ export interface AuthCredential {
   password: string;
 }
 
-export interface CredentialAuthFormProps {
+export interface CredentialAuthFormProps extends React.PropsWithChildren {
   onDismiss: () => void;
   onSave: (username: string, password: string) => void;
   focus?: boolean;
   loading?: boolean;
   isDisabled?: boolean;
-  children?: React.ReactNode;
   onCredentialChange?: (credential: AuthCredential) => void;
 }
 

@@ -49,11 +49,10 @@ import {
 import * as React from 'react';
 import { concatMap, filter, first } from 'rxjs/operators';
 
-interface RowData {
+interface RowData extends React.PropsWithChildren {
   eventType: EventType;
   isExpanded: boolean;
   cellContents: React.ReactNode[];
-  children?: React.ReactNode;
 }
 
 const tableColumns: TableColumn[] = [

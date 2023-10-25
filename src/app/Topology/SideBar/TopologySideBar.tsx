@@ -17,9 +17,8 @@
 import { DrawerActions, DrawerCloseButton, DrawerHead, DrawerPanelBody } from '@patternfly/react-core';
 import * as React from 'react';
 
-export interface TopologySideBarProps {
+export interface TopologySideBarProps extends React.PropsWithChildren {
   onClose: () => void;
-  children: React.ReactNode;
   className?: string;
 }
 

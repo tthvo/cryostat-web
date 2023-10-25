@@ -67,9 +67,7 @@ import { LayoutTemplateUploadModal } from './LayoutTemplateUploadModal';
 import { SelectedLayoutTemplate, DashboardLayout } from './types';
 import { getUniqueIncrementingName, LayoutTemplateContext } from './utils';
 
-export interface DashboardLayoutToolbarProps {
-  children?: React.ReactNode;
-}
+export interface DashboardLayoutToolbarProps extends React.PropsWithChildren {}
 
 const DefaultSelectedTemplate: SelectedLayoutTemplate = {
   template: BlankLayout,

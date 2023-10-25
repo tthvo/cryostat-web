@@ -46,7 +46,7 @@ export interface ColumnConfig {
   onSort: (columnIndex: number) => ThProps['sort'];
 }
 
-export interface RecordingsTableProps {
+export interface RecordingsTableProps extends React.PropsWithChildren {
   toolbar: React.ReactElement;
   tableColumns: ColumnConfig;
   tableTitle: string;
@@ -59,7 +59,6 @@ export interface RecordingsTableProps {
   errorMessage: string;
   onHeaderCheck: (event, checked: boolean) => void;
   clearFilters?: (filterType) => void;
-  children: React.ReactNode;
 }
 
 export const RecordingsTable: React.FC<RecordingsTableProps> = ({

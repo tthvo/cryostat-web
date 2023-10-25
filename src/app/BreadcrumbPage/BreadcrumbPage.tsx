@@ -27,10 +27,9 @@ import { Link } from 'react-router-dom';
 import { BreadcrumbTrail } from './types';
 import { isItemFilled } from './utils';
 
-interface BreadcrumbPageProps {
+interface BreadcrumbPageProps extends React.PropsWithChildren {
   pageTitle: string;
   breadcrumbs?: BreadcrumbTrail[];
-  children?: React.ReactNode;
 }
 
 export const BreadcrumbPage: React.FC<BreadcrumbPageProps> = ({ pageTitle, breadcrumbs, children }) => {

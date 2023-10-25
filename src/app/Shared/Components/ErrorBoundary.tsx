@@ -31,9 +31,8 @@ import * as React from 'react';
 import { Trans, useTranslation } from 'react-i18next';
 import { ServiceContext } from '../Services/Services';
 
-export interface ErrorBoundaryProps {
+export interface ErrorBoundaryProps extends React.PropsWithChildren {
   renderFallback: (error: Error) => React.ReactNode;
-  children?: React.ReactNode;
 }
 
 export interface ErrorBoundaryState {

@@ -22,11 +22,10 @@ import * as React from 'react';
 import { distinctUntilChanged, map } from 'rxjs/operators';
 import { TargetContextSelector } from './TargetContextSelector';
 
-interface TargetViewProps {
+interface TargetViewProps extends React.PropsWithChildren {
   attachments?: React.ReactNode;
   pageTitle: string;
   breadcrumbs?: BreadcrumbTrail[];
-  children: React.ReactNode;
 }
 
 export const TargetView: React.FC<TargetViewProps> = ({ attachments, pageTitle, breadcrumbs, children }) => {
