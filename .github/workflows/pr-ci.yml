@@ -68,7 +68,7 @@ jobs:
             pull_number: context.issue.number
           })
           return { num: result.data.number, head_sha: result.data.head.sha }
-
+# just a comment
   build-image-and-push:
     runs-on: ubuntu-latest
     permissions:
